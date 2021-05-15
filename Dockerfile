@@ -42,3 +42,6 @@ RUN apt-get install -y nodejs
 RUN npm i -g google-playstore-publisher
 RUN npm install -g firebase-tools
 RUN firebase --version
+
+RUN rm /tmp/gradle-${GRADLE_VERSION}-all.zip
+RUN rm /tmp/sdk-tools-linux-4333796.zip
