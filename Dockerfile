@@ -24,7 +24,7 @@ RUN wget 'https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip' 
 && unzip -d /opt/android /tmp/sdk-tools-linux-4333796.zip \
 && yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-${ANDROID_API_LEVEL};google_apis;x86" "platforms;android-${ANDROID_API_LEVEL}" "build-tools;${ANDROID_BUILD_TOOLS_LEVEL}" "emulator" \
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses \
-&& yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-30;google_apis;x86" "platforms;android-30"
+&& yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-30;google_apis;x86" "platforms;android-30" \
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses \
 && yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-27;google_apis;x86" "platforms;android-27" \
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses \
