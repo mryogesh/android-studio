@@ -21,7 +21,7 @@ RUN wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.
 
 RUN wget 'https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.1.0/android-studio-ide-202.7351085-linux.tar.gz' -P /tmp
 RUN gunzip -d /tmp/android-studio-ide-202.7351085-linux.tar.gz
-RUN mkdir -p .android && touch ~/.android/repositories.cfg
+RUN mkdir -p  ~/.android && touch ~/.android/repositories.cfg
 RUN unzip -d /opt/android /tmp/sdk-tools-linux-4333796.zip \
 && yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-30;google_apis;x86" \
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses \
