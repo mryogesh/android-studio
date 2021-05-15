@@ -28,7 +28,7 @@ RUN wget 'https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip' 
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses \
 && yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-27;google_apis;x86" "platforms;android-27" \
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses \
-&& yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-23;google_apis;x86" "platforms;android-23"
+&& yes Y | /opt/android/tools/bin/sdkmanager --install "platform-tools" "system-images;android-23;google_apis;x86" "platforms;android-23" \
 && yes Y | /opt/android/tools/bin/sdkmanager --licenses
 
 
